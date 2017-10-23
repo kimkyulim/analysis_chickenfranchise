@@ -50,5 +50,5 @@ gungu_alias = """고양시일산서구:고양시 고양시덕양구:고양시 �
 gungu_dict = dict()
 for aliasset in gungu_alias.split():
     s = aliasset.split(':')
-    sido_dict.update({s[0]: s[1]})
+    gungu_dict.update({s[0]: s[1]})
 #gungu_dict = dict(aliasset.split(':') for aliasset in gungu_alias.split())

@@ -15,8 +15,10 @@ pelicana = pelicana_table.apply(lambda r: r['sido'] + ' ' + r['gungu'], axis='co
 
 chicken_table = pd.DataFrame({'bbq': bbq, 'kyochon': kyochon, 'nene': nene, 'pelicana': pelicana}).fillna(0)
 
-plt.figure()
-chicken_table.sum(axis=0).iloc[:4].plot(kind='bar')
+print(chicken_table.sum(axis=0))
 
-plt.show()
+# plt.figure()
+# chicken_table.sum(axis=0).iloc[:4].plot(kind='bar')
+# chicken_table.plot(kind='bar')
+# plt.show()
 
